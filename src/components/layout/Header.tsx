@@ -16,22 +16,33 @@ export default function Header() {
             Giusy Di Stasio
           </span>
           <span className="font-mono mt-1 text-[11px] uppercase tracking-[0.2em] text-black/45">
-            Portfolio
+            Accounting & Organization
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 sm:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm text-black/65 transition hover:text-black"
+              className="font-mono text-sm text-black/65 transition hover:text-black"
             >
               {link.label}
             </Link>
           ))}
         </nav>
       </div>
+           <nav className="flex items-center gap-8 sm:hidden w-full justify-evenly py-2">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-mono text-sm text-black/65 transition hover:text-black"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
     </header>
   );
 }

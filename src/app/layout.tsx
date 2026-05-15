@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body
-        className={`${space.variable} ${mono.variable} bg-[#f7f4ee] text-black antialiased`}
+        className={`${space.variable} ${mono.variable} bg-[#f7f4ee] text-black antialiased overflow-y-hidden`}
       >
         <div className="flex min-h-screen flex-col">
           <Header />
